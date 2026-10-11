@@ -1,4 +1,4 @@
-# SpotToTube
+# SSpotToTube
 
 Aplicativo Flutter (Android) para **transferir playlists do Spotify para o YouTube Music** de forma 100% legal, usando apenas as APIs oficiais do Spotify e do Google (YouTube Data API v3).
 
