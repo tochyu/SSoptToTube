@@ -42,7 +42,25 @@ class AuthProvider extends ChangeNotifier {
   }
 
   /// Login OAuth com Spotify. Erros propagam para a UI exibir feedback.
-  Future<void> connectSpotify() async {
+    /// Login OAuth com Spotify. Retorna true se conectou de verdade,
+  /// false se o usuario cancelou. Erros propagam para a UI.
+  Future<bool> connectSpotify() async {
+    spotifyBusy = true;
+    notifyListeners();
+    try {
+      final ok = await spotifyAuth.login();
+      if (ok) {
+        final name = await spotifyService.getUserDisplayName();
+        await spotifyAuth.cacheProfileName(name);
+        spotifyUser = name;
+      }
+      return ok;
+    } finally {
+      spotifyBusy = false;
+      notifyListeners();
+    }
+  }
+
     spotifyBusy = true;
     notifyListeners();
     try {
