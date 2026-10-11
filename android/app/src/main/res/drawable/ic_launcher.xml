@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icone provisorio (vetorial): circulo verde com seta de transferencia.
+     Para gerar icones completos em todas as densidades, use o pacote
+     flutter_launcher_icons (veja README.md). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#1DB954"
+        android:pathData="M54,54m-42,0a42,42 0,1 1,84 0a42,42 0,1 1,-84 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,42h32l-8,-8h6l11,11 -11,11h-6l8,-8h-32z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M74,66h-32l8,8h-6l-11,-11 11,-11h6l-8,8h32z"/>
+</vector>

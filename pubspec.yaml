@@ -1,0 +1,40 @@
+name: spot_to_tube
+description: SpotToTube - Transferencia de playlists do Spotify para o YouTube Music usando APIs oficiais.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.2
+
+  # HTTP / APIs
+  http: ^1.2.2
+  googleapis: ^13.2.0
+  google_sign_in: ^6.2.1
+  extension_google_sign_in_as_googleapis_auth: ^2.0.12
+
+  # OAuth do Spotify (AppAuth nativo com Custom Tabs)
+  flutter_appauth: ^7.0.1
+
+  # Persistencia segura de tokens
+  flutter_secure_storage: ^9.2.2
+
+  # Preferencias (tema, velocidade, historico)
+  shared_preferences: ^2.3.2
+
+  # Formatacao de datas
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
